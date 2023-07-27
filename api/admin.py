@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Prof
+from .models import Prof, HoraireAlarm
 from .forms import ProfChangeForm, ProfCreationForm
 from django.utils.translation import gettext_lazy as _
 
@@ -18,3 +18,4 @@ class ProfAdmin(UserAdmin):
 
 
 admin.site.register(Prof, ProfAdmin)
+admin.site.register(HoraireAlarm)
